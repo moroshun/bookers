@@ -1,0 +1,55 @@
+
+<section class="blogsbox">
+
+
+
+
+	<div class="container"> <!-- ここを追加 -->
+		<div class="row">
+
+			<div class="col-xs-3">
+				<%= render 'users/list', user: current_user %>
+				<%= render 'blogs/list', blog: @blog %>
+			</div>
+		
+
+			<div class="col-lg-9">
+				
+
+				<h1 class="Books">Books</h1>
+
+				<section class=tablebox>
+					<table class="table">
+						<thead>
+							<tr>
+								 <th class="bookbox1">Title</th>
+								 <th class="bookbox2">Opinion</th>
+
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<% @blogs.each do |blog| %>
+								<tr>
+									<td><%= attachment_image_tag blog.user, :image, :fill,40,40, format:"jpeg",fallback:"no_image.jpg"%></td>
+									<td><%= link_to blog.title,blog_path(blog) %></td>
+
+									<td><%= blog.body %></td>
+
+								</tr>
+							<% end %>
+						</tbody>
+					</table>
+				</section>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+</section>

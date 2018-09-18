@@ -1,0 +1,32 @@
+<div class="container"> <!-- ここを追加 -->
+		<div class="row">
+
+			<div class="col-xs-3">
+				<%= render 'users/list', user: current_user %>
+				<%= render 'blogs/list', blog: @b %>
+			</div>
+		
+
+			<div class="col-lg-9">
+				
+
+				<h1 class="Books">Book detail</h1>
+				<section class=tablebox>
+					<table class="table">
+
+						<tbody>
+							<tr>
+								<td><%= attachment_image_tag @blog.user, :image, :fill,40,40, format:"jpeg",fallback:"no_image.jpg"%></td>
+								<td><%= @blog.title %></td>
+								<td><%= @blog.body %></td>
+								<td><%= link_to "edit", edit_blog_path(@blog) %></td>
+					<!-- 追加部分 -->
+								<td><%= link_to "destroy", blog_path(@blog), method: :delete %></td>
+							</tr>
+						</tbody>
+
+					</table>
+				</section>
+			</div>
+		</div>
+</div>

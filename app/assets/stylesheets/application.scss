@@ -1,0 +1,157 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";  /*ここを追加*/
+ @import "bootstrap";            /*ここを追加*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.biogsbox{
+	float: left;
+}
+.Books{
+	font-size: 25px;
+	color: #000000;
+	margin-left: 28px;
+	margin-top: 30px;
+}
+.Title{
+	font-size: 14px;
+	color: #000000;
+}
+.Titlebox{
+	margin: 10%;
+}
+.Body{
+	font-size: 14px;
+	color: #000000;
+}
+
+td{
+	padding: 0 30px;
+}
+.tablebox{
+	padding: 10px 0;
+	text-align: left;
+}
+.showbox{
+	padding: 30px 60px;
+	font-size: 13px;
+}
+.showbox1{
+	padding: 20px 60px;
+	font-size: 13px;
+}
+.showbox2{
+	margin-left: 2%;
+	margin-top: 20px;
+	font-size: 13px;
+}
+.editbox{
+	margin: 20px 0 0 40px;
+}
+.success{
+	color: green;
+	margin-bottom: 30px;
+}
+header{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: white;
+}
+.bookers{
+	font-size: 20px;
+	display: inline-block;
+	padding-left: 13%;
+	margin-top: 8px;
+}
+.navlist{
+	width: 80%;
+	height: 50px;
+	float: right;
+	line-height: 50px;
+	padding-left: 40%;
+}
+.allnav2 a{
+	list-style: none;
+	float: left;
+}
+.allnav a{
+	margin: 0 30px;
+	float: left;
+}
+
+.home a{
+	color: white;
+	display: inline-block;
+	margin: 0 30px;
+}
+.user a{
+	color: white;
+	display: inline-block;
+	margin: 0 30px;
+}
+.books a{
+	color: white;
+	display: inline-block;
+	margin: 0 30px;
+}
+.logout a{
+	color: white;
+	display: inline-block;
+	margin: 0 30px;
+}
+a:hover{
+	color: orange;
+}
+.about a{
+	color: white;
+	margin: 0 30px;
+}
+.signup a{
+	color: white;
+	margin: 0 30px;
+}
+.login a{
+	color: white;
+	margin: 0 30px;
+}
+.bookbox1{
+	padding: 0 5%;
+	text-align: left;
+}
+.bookbox2{
+	padding:  0 5%;
+	text-align: left;
+}
+th{
+	border-bottom: 2px solid #ddd;
+}
+li{
+	list-style: none;
+}
+
